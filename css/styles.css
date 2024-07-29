@@ -1,6 +1,6 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -30,25 +30,26 @@ h1 {
 }
 
 h2 {
-    color: cornflowerblue;
+    color: rgb(6, 68, 184);
     text-decoration: underline;
 }
 
 h3 {
-    color: rgb(0, 174, 255);
+    color: rgb(2, 107, 155);
     text-decoration: underline;
 }
 
-.texto{
-    color:rgb(66, 66, 168);
+.texto {
+    color: rgb(66, 66, 168);
     font-weight: 500;
-    
+
 }
 
 p {
     background-color: aqua;
 
 }
+
 .grid-container {
     display: grid;
     justify-content: center;
@@ -57,30 +58,29 @@ p {
     grid-template-rows: auto auto;
     align-self: auto;
     flex-flow: column;
-    
+
+    h3 {
+        padding: 30px;
+    }
+
+
 }
 
-.grid-container-dist {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
-    align-self: auto;
-    flex-flow: column;
-    
+.grid-item {
+    padding: 30px;
 }
+
 body {
     display: flex;
     flex-direction: column;
     background-color: rgb(143, 173, 228);
     padding: 10px;
     gap: 0px;
-    
+
 }
 
 
-main{
+main {
     background-color: aqua;
 }
 
@@ -90,21 +90,17 @@ main{
 
 @media only screen and (min-width: 768px) {
     .grid-container {
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
-    align-self: auto;
-    grid-gap:10px;
-    flex-flow: row;
-    flex-direction: row;
-}
-.grid-container-dist {
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    align-self: auto;
-    grid-gap:10px;
-    flex-flow: row;
-    flex-direction: row;
-}
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        align-self: auto;
+        grid-gap: 10px;
+        flex-flow: row;
+        flex-direction: row;
+
+        h3 {
+            padding: 0px;
+        }
+    }
 }
 
 /* Media query desktop -entre 1024px y 1200px) */
